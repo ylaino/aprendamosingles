@@ -1,0 +1,58 @@
+header {
+    grid-area: header;
+    }
+  
+  #grilla { 
+    grid-area: contenido;
+    }
+    
+  footer {
+    grid-area: footer;
+  }
+  .titulo {
+    grid-area: titulo;
+    }
+  .conteiner_table {
+    grid-area: tabla;
+  }
+  .content {
+    grid-area: contenido;
+  }
+  .contacto {
+    grid-area: contacto;
+  }
+  .saludos {
+    grid-area: saludos;
+  }
+  .tabla2 {
+    grid-area: tabla2;
+  }
+  
+  /* ESTRUCTURA CON GRID */
+  
+  .grid-structure {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 2f;
+    grid-template-rows: 1fr 2f 2fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "titulo titulo"
+    "contenido contenido"
+    "footer footer";
+  }
+  /* MEDIA QUERIES */
+  
+  
+  @media (max-width:900px) {
+    #logo { 
+      display: none;
+      }
+  }
+  
+  
+   @media (max-width:768px) {
+  .grid-structure {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto auto 1fr 1fr;
+  }}
