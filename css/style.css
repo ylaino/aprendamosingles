@@ -207,4 +207,150 @@ footer .footer__bottom {
   text-align: right;
 }
 
+/*RESPONSIVE - MOBILE */
+/* GRID AREAS */
+header {
+  grid-area: header;
+}
+
+#grilla {
+  grid-area: contenido;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.conteiner_table {
+  grid-area: tabla;
+}
+
+.content {
+  grid-area: contenido;
+}
+
+.contacto {
+  grid-area: contacto;
+}
+
+.saludos {
+  grid-area: saludos;
+}
+
+.tabla2 {
+  grid-area: tabla2;
+}
+
+/* ESTRUCTURA CON GRID */
+.grid-structure {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 2f;
+  grid-template-rows: 1fr 2f 2fr 1fr;
+  grid-template-areas: "header header" "titulo titulo" "contenido contenido" "footer footer";
+}
+
+.grid-structure2 {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 2f 1fr;
+  grid-template-rows: 1fr 2f 2fr 2fr 1fr;
+  grid-template-areas: "header header header" "titulo titulo titulo" "contenido contenido contenido" "tabla tabla tabla" "footer footer footer";
+}
+
+.grid-structure3 {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 2f 1fr;
+  grid-template-rows: 1fr 2f 2fr 2fr 1fr;
+  grid-template-areas: "header header header" "titulo titulo titulo" "contacto contacto contacto" "saludos saludos saludos  " "footer footer footer";
+}
+
+/*
+.grid-structure4 {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 2f 1fr;
+  grid-template-rows: 1fr 2f 2fr 2fr 1fr;
+  grid-template-areas: 
+  "header header header"
+  "titulo titulo titulo"
+  "contenido contenido contenido"
+  "tabla2  tabla2 tabla2"
+  "footer footer footer";
+
+}
+*/
+/* MEDIA QUERIES */
+@media (max-width: 950px) {
+  #logo {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .grid-structure {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto auto 1fr 1fr;
+  }
+  .grid-structure2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-areas: "header" "titulo" "contenido" "contenido" "tabla" "footer";
+  }
+  .grid-structure3 {
+    grid-template-columns: 1fr;
+  }
+  .principal {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .info {
+    text-align: justify;
+    align-items: center;
+    align-content: center;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .imagenProfe {
+    visibility: hidden;
+  }
+  .contacto__bottom {
+    flex-direction: column;
+  }
+  .conteiner_table {
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1.5fr 2 fr 3fr;
+    grid-template-rows: 1fr 1fr auto;
+    background-color: rgba(137, 43, 226, 0.401);
+    font-size: 1rem;
+  }
+  .table__head {
+    font-size: 1rem;
+  }
+  .table__title {
+    font-size: 1.5rem;
+  }
+  .imagen__corazon {
+    width: 20rem;
+    justify-content: center;
+    justify-self: center;
+    margin-left: 0;
+  }
+  footer {
+    font-weight: 400;
+    font-size: 0.5rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
