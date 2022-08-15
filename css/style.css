@@ -63,7 +63,7 @@ footer {
     grid-template-rows: 0.5fr auto auto 1fr 1fr;
   }
 }
-.container {
+.container, .container #logo {
   display: flex;
   flex-direction: row;
   background-color: #724370;
@@ -74,34 +74,35 @@ footer {
 }
 .container #logo {
   margin-right: 20%;
+  box-shadow: none;
 }
-.container .nav {
+.container .nav, .container #logo .nav {
   align-items: left;
   justify-content: space-between;
   padding: 1rem;
   margin: 1rem;
 }
-.container .nav .nav__list {
+.container .nav .nav__list, .container #logo .nav .nav__list {
   list-style: none;
   display: flex;
 }
-.container .nav .nav__item {
+.container .nav .nav__item, .container #logo .nav .nav__item {
   margin-left: 1.5rem;
 }
-.container .nav .nav__link {
+.container .nav .nav__link, .container #logo .nav .nav__link {
   color: rgb(77, 184, 250);
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
 }
-.container .nav .nav__link:hover {
-  color: rgb(241, 241, 241);
+.container .nav .nav__link:hover, .container #logo .nav .nav__link:hover {
+  color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bolder;
 }
-.container .nav .nav__link:active {
+.container .nav .nav__link:active, .container #logo .nav .nav__link:active {
   text-decoration: underline;
 }
 
@@ -145,7 +146,7 @@ body {
   padding: 1.5rem;
   margin-left: 4rem;
   margin-right: 4rem;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 .opciones .opciones__card {
   display: flex;
