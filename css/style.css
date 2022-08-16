@@ -207,27 +207,34 @@ body {
 }
 
 .profesora {
-  font-size: 30px;
+  font-size: 10px;
   line-height: 1.6;
   padding: 2rem 10rem 2rem 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .profesora .profesora__subtitulo {
   padding-bottom: 2rem;
+}
+.profesora .profesora1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
+  margin: 2%;
 }
 
 .profesora__banner {
   width: 100%;
   height: auto;
-}
-
-.banner {
-  text-align: center;
-  justify-content: center;
-  margin: 20px;
-  padding: 2rem 15rem 2rem 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
 }
 
 h3 {
@@ -279,6 +286,8 @@ h2 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   line-height: 1.6;
+  justify-content: center;
+  align-items: center;
 }
 
 .clases__box {
@@ -376,20 +385,22 @@ footer .footer__bottom {
 }
 
 @media (max-width: 768px) {
-  .profesora {
-    font-size: 30px;
-    line-height: 1.6;
-    padding: 0.5rem;
+  .profesora1 {
+    display: flex;
+    flex-direction: column;
   }
-  .profesora .profesora__subtitulo {
+  .profesora1 {
+    font-size: 10px;
+  }
+  .profesora1 .profesora__subtitulo {
     padding-bottom: 2rem;
   }
-  .profesora .profesora__banner {
+  .profesora1 .profesora__banner {
     justify-content: center;
     text-align: center;
     width: 50%;
   }
-  .profesora .grid {
+  .profesora1 .grid {
     grid-template-columns: 1fr;
     justify-content: center;
   }

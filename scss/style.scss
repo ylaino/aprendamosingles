@@ -132,38 +132,42 @@ body {
 
 
 .profesora {
-  font-size: 30px;
+  font-size: 10px;
   line-height: 1.6;
   padding: 2rem 10rem 2rem 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   .profesora__subtitulo {
     padding-bottom: 2rem;
   }
 
+  .profesora1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: map-get($map: $palette, $key: 'blanco');
+    padding: 2%;
+    margin: 2%;
+    }
   
 }
  .profesora__banner {
   width: 100%;
   height: auto;
+  margin-left: auto; 
+  margin-right: auto;
+  padding-left: 5%;
  }
 
 
 
-  
-
- 
 
 
-.banner {
-  text-align: center;
-  justify-content: center;
-  margin: 20px;
-  padding: 2rem 15rem 2rem 15rem;
-  
-}
 
 
 h3 {
@@ -216,16 +220,19 @@ color: map-get($map: $palette, $key: 'violeta2');}
   padding-top: 1rem;
   padding-bottom: 1rem;
   line-height: 1.6;
+  justify-content: center;
+  align-items: center;
 }
 
 .clases__box {
   display: flex;
   flex-direction: row;
+  
 }
 
 .clase__imagen {
   width: 25rem;
-}
+  }
 
 /*
 .content1 {
@@ -329,10 +336,15 @@ footer {
  
            
            @media (max-width:768px) {
-            .profesora {
-              font-size: 30px;
-              line-height: 1.6;
-              padding: 0.5rem;
+           
+            .profesora1 {
+              display: flex;
+              flex-direction: column;
+            }
+           
+           
+            .profesora1 {
+              font-size: 10px;
                           
               .profesora__subtitulo {
                 padding-bottom: 2rem;
