@@ -27,6 +27,13 @@ header {
   .tabla2 {
     grid-area: tabla2;
   }
+  .profesora {
+    grid-area: profesora;
+  }
+  .content1 {
+    grid-area: contenido1;
+  }
+ 
   
   /* ESTRUCTURA CON GRID */
   
@@ -41,6 +48,31 @@ header {
     "contenido contenido"
     "footer footer";
   }
+  .grid-structure1 {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1f;
+    grid-template-rows: 1fr 1f 2fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "titulo titulo"
+    "profesora profesora"
+    "footer footer";
+  }
+  .grid-structure2 {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 2f;
+    grid-template-rows: 1fr 2f 2fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "titulo titulo"
+    "contenido1 contenido1"
+    "footer footer";
+  }
+
+
+
   /* MEDIA QUERIES */
   
   
@@ -55,4 +87,18 @@ header {
   .grid-structure {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr auto auto 1fr 1fr;
-  }}
+  }
+
+  .grid-structure1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto auto 1fr;
+  }
+
+  .grid-structure2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto auto 1fr;
+  }
+
+
+
+}
