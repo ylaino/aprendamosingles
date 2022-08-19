@@ -59,13 +59,31 @@ font-family: raleway, sans-serif;
         }
   }
 
-  h1 {
-    color: map-get($map: $palette, $key:'violeta2' );
-    text-align: center;
-    font-size: 70px;
-    font-weight: bold;
-    text-shadow: rgba(252, 251, 251, 0.407) 0.2rem 0.2rem 0.2rem;
-    }
+h1 {
+  color: map-get($map: $palette, $key:'violeta2' );
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  text-shadow: rgba(252, 251, 251, 0.407) 0.2rem 0.2rem 0.2rem;
+  }
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  color: map-get($map: $palette, $key: 'violeta2');
+}
+
+h3 {
+  text-align: justify;
+  justify-content: center;
+  color: map-get($map: $palette, $key:'violeta2' );
+  font-size: 30px;
+}
+
+h4 {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
   
   .titulo {margin-top: 1rem;}
 
@@ -169,25 +187,50 @@ body {
 
 
 
+ 
 
-h3 {
-  text-align: justify;
-  justify-content: center;
-  color: map-get($map: $palette, $key:'violeta2' );
-  font-size: 30px;
+/* PÁGINA DE MODALIDAD*/
+
+.grid {display: grid;
+  grid-template-columns: 1fr 0.5rem 1fr;
+  grid-gap: 0.5rem;
 }
 
-      
-h4 {
-    padding: 1rem;
-    font-size: 1.5rem;
+.clases {
+  margin: 4rem;
+  max-width: 90%;
+  padding: 2.5rem;
+  border: solid black;
+  background-color: rgb(146, 220, 233);
+  font-size: 1rem;
+  border-radius: 30px;
+
+    .clases__titulo {
+      padding:0 ;
+      margin: 1rem;
+      font-size: 3rem;
+      font-weight: bolder;
+      text-align: center;
     }
 
-h2 {font-size: 40px;
-text-align: center;
-color: map-get($map: $palette, $key: 'violeta2');}
-          
- 
+    .clases__contenido {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      line-height: 1.6;
+    }
+    
+  }
+
+.clase__imagen {
+  align-self: center;
+}
+
+
+
+
+
+
+
 .content1 {
   justify-content: center;
   align-items: center;
@@ -227,8 +270,7 @@ color: map-get($map: $palette, $key: 'violeta2');}
 .clases__box {
   display: flex;
   flex-direction: row;
-  
-}
+  }
 
 .clase__imagen {
   width: 25rem;
@@ -356,12 +398,13 @@ footer {
                 width: 50%;
               }
             
-              .grid {
-                grid-template-columns: 1fr;
-                justify-content: center;
-              }
+              
             }
 
+
+
+            .grid {display: flex;
+            flex-direction: column;}
 
               .clases__box {
                 display: flex;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -70,7 +71,7 @@ footer {
 .grid-structure2 {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 1fr 2f;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 2f 2fr 1fr;
   grid-template-areas: "header header" "titulo titulo" "contenido1 contenido1" "footer footer";
 }
@@ -91,7 +92,7 @@ footer {
     grid-template-rows: 0.5fr auto auto 1fr;
   }
   .grid-structure2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: 0.5fr auto auto 1fr;
   }
 }
@@ -144,6 +145,24 @@ h1 {
   font-size: 70px;
   font-weight: bold;
   text-shadow: rgba(252, 251, 251, 0.407) 0.2rem 0.2rem 0.2rem;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #450742;
+}
+
+h3 {
+  text-align: justify;
+  justify-content: center;
+  color: #450742;
+  font-size: 30px;
+}
+
+h4 {
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .titulo {
@@ -237,22 +256,37 @@ body {
   padding-left: 5%;
 }
 
-h3 {
-  text-align: justify;
-  justify-content: center;
-  color: #450742;
-  font-size: 30px;
+/* PÁGINA DE MODALIDAD*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 0.5rem 1fr;
+  grid-gap: 0.5rem;
 }
 
-h4 {
-  padding: 1rem;
-  font-size: 1.5rem;
+.clases {
+  margin: 4rem;
+  max-width: 90%;
+  padding: 2.5rem;
+  border: solid black;
+  background-color: rgb(146, 220, 233);
+  font-size: 1rem;
+  border-radius: 30px;
 }
-
-h2 {
-  font-size: 40px;
+.clases .clases__titulo {
+  padding: 0;
+  margin: 1rem;
+  font-size: 3rem;
+  font-weight: bolder;
   text-align: center;
-  color: #450742;
+}
+.clases .clases__contenido {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.clase__imagen {
+  align-self: center;
 }
 
 .content1 {
@@ -400,9 +434,9 @@ footer .footer__bottom {
     text-align: center;
     width: 50%;
   }
-  .profesora1 .grid {
-    grid-template-columns: 1fr;
-    justify-content: center;
+  .grid {
+    display: flex;
+    flex-direction: column;
   }
   .clases__box {
     display: flex;

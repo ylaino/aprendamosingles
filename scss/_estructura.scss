@@ -36,7 +36,8 @@ header {
  
   
   /* ESTRUCTURA CON GRID */
-  
+
+    
   .grid-structure {
     display: grid;
     min-height: 100vh;
@@ -62,7 +63,7 @@ header {
   .grid-structure2 {
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 1fr 2f;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2f 2fr 1fr;
     grid-template-areas: 
     "header header"
@@ -95,7 +96,7 @@ header {
   }
 
   .grid-structure2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: 0.5fr auto auto 1fr;
   }
 
