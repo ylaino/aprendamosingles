@@ -40,13 +40,15 @@
   <div class="contacto__formulario"></div>
     <form class="formulario" action="Contactanos!">
       <fieldset>
-        <legend>¡Contactanos!</legend>
-          <div>¿Qué tipo de educación estás buscando?</div><label for="Educación"></label>
-        <input type="radio" name="Educación" value="Ed. Primaria" />
+        
+        <div class="formulario__todo">
+          <legend>¡Contactanos!</legend>
+          <div class="formulario__educacion">¿Qué tipo de educación estás buscando?</div><label for="Educación"></label>
+        <input type="radio" name="Educación" value="Ed. Primaria" class="field1"/>
         <span>Ed. Primaria</span>
-        <input type="radio" name="Educación" value="Ed. Secundaria" />
+        <input type="radio" name="Educación" value="Ed. Secundaria"class="field1" />
         <span>Ed. Secundaria</span>
-        <input type="radio" name="Educación" value="Adultos" />
+        <input type="radio" name="Educación" value="Adultos" class="field1"/>
         <span>Adultos</span>
         <br />
         <br />
@@ -60,20 +62,24 @@
         <div>
           <br />
           <label for="nombre">Nombre:</label>
-          <input type="nombre" name="nombre" id="nombre" />
+          <div><input type="nombre" name="nombre" id="nombre" class="field" />
+          </div>
         </div>
         <div>
           <label for="apellido">Apellido:</label>
-          <input type="apellido" name="apellido" id="apellido" />
+          <div><input type="apellido" name="apellido" id="apellido" class="field" />
+          </div>
         </div>
         <div>
-          <label for="mail">E-mail:</label>
-          <input type="mail" name="mail" id="mail" />
+          <label for="mail">E-mail:  </label>
+          <div><input type="mail" name="mail" id="mail" class="field" />
+          </div>
         </div>
+      
         <br />
         
-        <div>¿Quiéres recibir el newsletter?</div>
-        <input type="checkbox" name="acepta" value="1" />
+        <div>¿Querés recibir más información? <input type="checkbox" name="acepta" value="1" /></div>
+        
         <br /><label for="mensaje">Dejanos tu mensaje:</label>
         <br />
         <textarea name="mensaje" id="mensaje" cols="80" rows="10"></textarea>
@@ -85,6 +91,7 @@
   
   </div> 
   </div>
+</div>
 </div>
   
 <div class="saludo">¡Muchas gracias por contactarte!</div>

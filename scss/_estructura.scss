@@ -72,7 +72,19 @@ header {
     "footer footer";
   }
 
-
+  .grid-structure4 {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 2f 1fr;
+    grid-template-rows: 1fr 2f 2fr 2fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "titulo titulo titulo"
+    "contenido contenido contenido"
+    "tabla2  tabla2 tabla2"
+    "footer footer footer";
+  
+  }
 
   /* MEDIA QUERIES */
   
