@@ -207,8 +207,8 @@ body {
   max-width: 1600px;
   justify-content: center;
   align-items: center;
-  padding: 2%;
-  margin: 1rem;
+  padding: 0 2% 2% 2%;
+  margin: 0 1rem 1rem 1rem 1rem;
 }
 
 .opciones {
@@ -377,8 +377,8 @@ body {
 .content1 {
   justify-content: center;
   align-items: center;
-  padding: 2%;
-  margin: 1%;
+  padding: 0 2% 2% 2%;
+  margin: 0 1% 1% 1% 1%;
 }
 
 .clases {
@@ -577,15 +577,13 @@ footer .footer__bottom {
     font-size: 10px;
   }
   .profesora__subtitulo {
+    padding-top: 2rem;
     padding-bottom: 2rem;
   }
   .profesora__banner {
     justify-content: center;
     text-align: center;
     width: 50%;
-  }
-  h1 {
-    font-size: 50%;
   }
   footer {
     font-size: 0.5rem;
