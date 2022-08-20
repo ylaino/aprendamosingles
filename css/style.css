@@ -177,6 +177,7 @@ h4 {
 
 .titulo {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 body {
@@ -222,17 +223,29 @@ body {
   margin-right: 4rem;
   background-color: rgb(255, 255, 255);
 }
-.opciones .opciones__card {
+
+.opciones1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.opciones1 .opciones__card {
   display: flex;
   flex: 0.5 8 200px;
   flex-direction: row;
+  background-color: rgb(255, 255, 255);
 }
-.opciones .opciones__card .divv {
+.opciones1 .opciones__card .divv {
   flex-direction: row;
   text-align: left;
   align-self: center;
 }
-.opciones .opciones__card .opciones__imagen {
+.opciones1 .opciones__card .opciones__imagen {
   max-width: 50%;
 }
 
@@ -350,8 +363,8 @@ body {
 
 .clases {
   margin: 4rem;
-  max-width: 90%;
-  padding: 2.5rem;
+  max-width: 80%;
+  padding: 6rem;
   border: solid black;
   background-color: rgb(146, 220, 233);
   font-size: 1rem;

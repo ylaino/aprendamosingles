@@ -90,6 +90,7 @@ h4 {
   
 .titulo {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
  
 body {
@@ -136,12 +137,24 @@ body {
             padding: 1.5rem;
             margin-left: 4rem;
             margin-right: 4rem;
-            background-color: map-get($map: $palette, $key: 'blanco');
+            background-color: map-get($map: $palette, $key: 'blanco');}
+
+            .opciones1 {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 2rem;
+              flex-wrap: wrap;
+              padding: 1.5rem;
+              margin-left: 4rem;
+              margin-right: 4rem;
+              
 
             .opciones__card {
                 display: flex;
                 flex: 0.5 8 200px;
                 flex-direction: row;
+                background-color: map-get($map: $palette, $key:'blanco' );
             
                 .divv {
                     flex-direction: row;
@@ -280,8 +293,8 @@ body {
 
 .clases {
   margin: 4rem;
-  max-width: 90%;
-  padding: 2.5rem;
+  max-width: 80%;
+  padding: 6rem;
   border: solid black;
   background-color: rgb(146, 220, 233);
   font-size: 1rem;
