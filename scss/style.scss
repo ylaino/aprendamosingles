@@ -137,7 +137,23 @@ body {
             padding: 1.5rem;
             margin-left: 4rem;
             margin-right: 4rem;
-            background-color: map-get($map: $palette, $key: 'blanco');}
+            background-color: map-get($map: $palette, $key: 'blanco');
+          
+            .opciones__card {
+              display: flex;
+              flex: 0.5 8 200px;
+              flex-direction: row;
+              background-color: map-get($map: $palette, $key:'blanco' );
+            
+              .divv {
+                flex-direction: row;
+                text-align: left;
+                align-self: center;
+                }
+            
+            .opciones__imagen {
+                max-width: $img-chica;
+                }}
 
             .opciones1 {
               display: flex;
@@ -150,25 +166,61 @@ body {
               margin-right: 4rem;
               
 
-            .opciones__card {
-                display: flex;
-                flex: 0.5 8 200px;
-                flex-direction: row;
-                background-color: map-get($map: $palette, $key:'blanco' );
             
-                .divv {
-                    flex-direction: row;
-                    text-align: left;
-                    align-self: center;
-                    }
+            
                 
-                .opciones__imagen {
-                    max-width: $img-chica;
-                    }
                  
               }
         
         }
+
+
+
+
+
+        .content2 {
+          max-width: 1600px;
+          justify-content: center;
+          align-items: center;
+          padding: 0 2% 2% 2%;
+          margin: 0 1rem 1rem 1rem 1rem;
+          }
+          .opciones1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 1.5rem;
+            margin-left: 4rem;
+            margin-right: 4rem;
+            
+              .opciones__card1 {
+                display: flex;
+                flex: 0.5 8 200px;
+                flex-direction: row;
+                background-color: map-get($map: $palette, $key:'blanco' );
+              
+                .divv1 {
+                  flex-direction: row;
+                  text-align: left;
+                  align-self: center;
+                  }
+              
+              .opciones__imagen1 {
+                  max-width: $img-chica;
+                  }}
+  
+              
+                
+  
+              
+              
+                  
+                   
+                }
+          
+        
 
 
 /* -------- SOBRE LA PROFESORA -------- */

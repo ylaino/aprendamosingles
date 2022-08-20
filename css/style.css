@@ -223,6 +223,38 @@ body {
   margin-right: 4rem;
   background-color: rgb(255, 255, 255);
 }
+.opciones .opciones__card {
+  display: flex;
+  flex: 0.5 8 200px;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+}
+.opciones .opciones__card .divv {
+  flex-direction: row;
+  text-align: left;
+  align-self: center;
+}
+.opciones .opciones__card .opciones__imagen {
+  max-width: 50%;
+}
+.opciones .opciones1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.content2 {
+  max-width: 1600px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2% 2% 2%;
+  margin: 0 1rem 1rem 1rem 1rem;
+}
 
 .opciones1 {
   display: flex;
@@ -234,18 +266,18 @@ body {
   margin-left: 4rem;
   margin-right: 4rem;
 }
-.opciones1 .opciones__card {
+.opciones1 .opciones__card1 {
   display: flex;
   flex: 0.5 8 200px;
   flex-direction: row;
   background-color: rgb(255, 255, 255);
 }
-.opciones1 .opciones__card .divv {
+.opciones1 .opciones__card1 .divv1 {
   flex-direction: row;
   text-align: left;
   align-self: center;
 }
-.opciones1 .opciones__card .opciones__imagen {
+.opciones1 .opciones__card1 .opciones__imagen1 {
   max-width: 50%;
 }
 
