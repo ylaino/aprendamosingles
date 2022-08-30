@@ -311,7 +311,7 @@ body {
 .contenido__profesora .profesora1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 5%;
 }
@@ -325,13 +325,24 @@ body {
   margin: 3%;
 }
 .contenido__profesora .profesora__info {
-  font-size: 2rem;
+  font-size: 220%;
   text-align: justify;
   padding-right: 5%;
+  max-width: 90%;
 }
 .contenido__profesora .profesora__subtitulo1 {
-  font-size: 3rem;
+  font-size: 250%;
   font-weight: 600;
+  text-align: center;
+}
+.contenido__profesora .profesora__lista {
+  padding-left: 10%;
+}
+.contenido__profesora .profesora__info1 {
+  font-size: 220%;
+  text-align: left;
+  padding-right: 5%;
+  padding-top: 10%;
 }
 
 /*
@@ -667,7 +678,6 @@ footer .footer__bottom {
   }
   .profesora__subtitulo {
     padding-top: 2rem;
-    padding-bottom: 2rem;
   }
   .profesora__banner {
     justify-content: center;
@@ -680,6 +690,9 @@ footer .footer__bottom {
   .clases__box {
     display: flex;
     flex-direction: column;
+  }
+  .profesora__imagen {
+    display: none;
   }
 }
 @media (max-width: 500px) {
@@ -726,6 +739,19 @@ footer .footer__bottom {
   }
   .clase__imagen {
     max-width: 200px;
+  }
+  .contenido__profesora {
+    display: flex;
+    flex-direction: column;
+  }
+  .profesora__imagen {
+    display: none;
+  }
+  .profesora__info {
+    font-size: 150%;
+  }
+  .profesora__subtitulo1 {
+    font-size: 100%;
   }
 }
 
