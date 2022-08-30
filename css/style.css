@@ -248,7 +248,7 @@ body {
   margin-right: 4rem;
 }
 
-.content2 {
+.content {
   max-width: 1600px;
   justify-content: center;
   align-items: center;
@@ -256,7 +256,7 @@ body {
   margin: 0 1rem 1rem 1rem 1rem;
 }
 
-.opciones1 {
+.opciones {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,20 +265,31 @@ body {
   padding: 1.5rem;
   margin-left: 4rem;
   margin-right: 4rem;
+  background-color: rgb(255, 255, 255);
 }
-.opciones1 .opciones__card1 {
+.opciones .opciones__card11 {
   display: flex;
   flex: 0.5 8 200px;
   flex-direction: row;
   background-color: rgb(255, 255, 255);
 }
-.opciones1 .opciones__card1 .divv1 {
+.opciones .opciones__card11 .divv11 {
   flex-direction: row;
   text-align: left;
   align-self: center;
 }
-.opciones1 .opciones__card1 .opciones__imagen1 {
+.opciones .opciones__card11 .opciones__imagen11 {
   max-width: 50%;
+}
+.opciones .opciones1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 /* -------- SOBRE LA PROFESORA -------- */
@@ -398,14 +409,15 @@ body {
   max-width: 80%;
   padding: 6rem;
   border: solid black;
-  background-color: rgb(146, 220, 233);
-  font-size: 1rem;
+  background-color: rgb(255, 255, 255);
   border-radius: 30px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
 }
 .clases .clases__titulo {
   padding: 0;
   margin: 1rem;
-  font-size: 3rem;
   font-weight: bolder;
   text-align: center;
 }
@@ -433,8 +445,7 @@ body {
   max-width: 80%;
   padding: 2.5rem;
   border: solid black;
-  background-color: rgb(146, 220, 233);
-  font-size: 1rem;
+  background-color: rgb(255, 255, 255);
   border-radius: 30px;
 }
 
@@ -461,6 +472,39 @@ body {
 
 .clase__imagen {
   width: 25rem;
+}
+
+.content2 {
+  max-width: 1600px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2% 2% 2%;
+  margin: 0 1rem 1rem 1rem 1rem;
+}
+
+.opciones1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.opciones1 .opciones__card1 {
+  display: flex;
+  flex: 0.5 8 200px;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+}
+.opciones1 .opciones__card1 .divv1 {
+  flex-direction: row;
+  text-align: left;
+  align-self: center;
+}
+.opciones1 .opciones__card1 .opciones__imagen1 {
+  max-width: 50%;
 }
 
 /*
@@ -636,6 +680,52 @@ footer .footer__bottom {
   .clases__box {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 80%;
+  }
+  h4 {
+    padding: 0;
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .opciones {
+    max-width: 300px;
+    gap: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .opciones__card {
+    flex: 0.5 8 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .opciones__imagen {
+    max-width: 25px;
+    max-height: 120px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+  }
+  .clases {
+    margin: 1rem;
+    padding: 2rem;
+  }
+  .clases .clases__titulo {
+    font-size: 2rem;
+  }
+  .clase__imagen {
+    max-width: 200px;
   }
 }
 
