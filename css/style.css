@@ -93,7 +93,7 @@ footer {
 @media (max-width: 768px) {
   .grid-structure {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr auto auto 1fr 1fr;
+    /*grid-template-rows: 0.5fr auto auto 1fr;*/
   }
   .grid-structure1 {
     grid-template-columns: 1fr;
