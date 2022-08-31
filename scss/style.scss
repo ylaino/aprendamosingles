@@ -71,7 +71,6 @@ h1 {
   }
 
 h2 {
-  font-size: 30px;
   text-align: center;
   color: map-get($map: $palette, $key: 'violeta2');
 }
@@ -246,7 +245,7 @@ body {
   }
 
   .profesora__subtitulo {
-    font-size: 20%;
+    font-size: 70%;
     text-align: center;
     justify-content: center;
   }
@@ -254,7 +253,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    line-height: 1.6;
     padding: 5%;
   }
   .profesora2 {
@@ -267,14 +266,14 @@ body {
     margin: 3%;
   }
   .profesora__info {
-    font-size: 220%;
+    font-size: 160%;
     text-align: justify;
     padding-right: 5%;
     max-width: 90%;
     
   }
   .profesora__subtitulo1 {
-    font-size: 250%;
+    font-size: 220%;
     font-weight: 600;
     text-align: center;
 
@@ -284,7 +283,7 @@ body {
     
   }
   .profesora__info1 {
-    font-size: 220%;
+    font-size: 160%;
     text-align: left;
     padding-right: 5%;
     padding-top: 10%;
@@ -665,14 +664,13 @@ footer {
     font-size: 10px;
   }
            
-  .profesora__subtitulo {
-    padding-top: 2rem;
-  }
+  
 
   .profesora__banner {
     justify-content: center;
     text-align: center;
     width: 50%;
+    margin: 0 0 0 25%;
   }
 
   footer {
@@ -750,6 +748,9 @@ footer {
   }
   .profesora__info {
     font-size: 150%;
+  }
+  .profesora__info1 {
+    font-size: none;
   }
   .profesora__subtitulo1 {
     font-size: 100%;
