@@ -202,6 +202,10 @@ body {
   text-shadow: rgba(252, 251, 251, 0.407) 0.2rem 0.2rem 0.2rem;
 }
 
+.info {
+  margin-top: 2rem;
+}
+
 .content {
   max-width: 1600px;
   justify-content: center;
@@ -214,7 +218,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   flex-wrap: wrap;
   padding: 1.5rem;
   margin-left: 4rem;
@@ -479,7 +482,7 @@ body {
 }
 
 .clase__imagen {
-  width: 25rem;
+  width: 100%;
 }
 
 .content2 {
@@ -574,7 +577,6 @@ flex-direction: row;}
   justify-content: center;
   align-items: center;
   font-size: 15px;
-  padding: 20px;
 }
 .contacto .formulario .field {
   padding: 5px;
@@ -672,6 +674,11 @@ footer .footer__bottom {
 }
 
 /* -------- MEDIA QUERIES --------*/
+@media (max-width: 1300) {
+  .clase__imagen {
+    width: 75%;
+  }
+}
 @media (max-width: 950px) {
   .grid {
     display: flex;
@@ -730,8 +737,6 @@ footer .footer__bottom {
     flex-direction: column;
   }
   .opciones__imagen {
-    max-width: 25px;
-    max-height: 120px;
     display: flex;
     flex-direction: column;
     margin-top: 20%;
