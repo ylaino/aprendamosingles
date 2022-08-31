@@ -66,7 +66,7 @@ h1 {
   color: map-get($map: $palette, $key:'violeta2' );
   text-align: center;
   font-size: 60px;
-  font-weight: bold;
+  font-weight: bolder;
   text-shadow: rgba(252, 251, 251, 0.407) 0.2rem 0.2rem 0.2rem;
   }
 
@@ -85,7 +85,7 @@ h3 {
 
 h4 {
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 150%;
 }
   
 .titulo {
@@ -686,6 +686,9 @@ footer {
   .profesora__imagen {
     display: none;
   }
+  .opciones1 {
+    display: block;
+  }
   
 }
 @media (max-width:500px) {
@@ -760,6 +763,7 @@ footer {
     font-size: 60%;
     align-items: center;
   }
+  
 }
 
 
