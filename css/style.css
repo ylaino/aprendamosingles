@@ -166,7 +166,6 @@ h3 {
   text-align: justify;
   justify-content: center;
   color: #450742;
-  font-size: 30px;
 }
 
 h4 {
@@ -462,8 +461,7 @@ body {
 .clases__titulo {
   padding: 0;
   margin: 1rem;
-  font-size: 3rem;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -575,9 +573,8 @@ flex-direction: row;}
 .contacto .formulario {
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  padding: 30px;
-  margin: 20px;
+  font-size: 15px;
+  padding: 20px;
 }
 .contacto .formulario .field {
   padding: 5px;
@@ -593,14 +590,14 @@ flex-direction: row;}
   border: 0;
   width: 200px;
   margin: 0 auto;
-  border-radius: 7%;
+  border-radius: 2%;
 }
 .contacto #mensaje {
   border-radius: 2rem;
 }
 
 .boton {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0.5rem;
   align-items: center;
   justify-content: center;
@@ -624,6 +621,19 @@ flex-direction: row;}
   align-content: center;
   justify-content: center;
   align-items: center;
+  background-color: #a086e2;
+}
+
+.contacto__direccion {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+}
+
+.saludo {
+  text-align: center;
+  padding-bottom: 5%;
+  font-size: 120%;
 }
 
 /* -------- FOOTER -------- */
@@ -702,9 +712,6 @@ footer .footer__bottom {
   h2 {
     font-size: 20px;
   }
-  h3 {
-    font-size: 80%;
-  }
   h4 {
     padding: 0;
     font-size: 1rem;
@@ -731,7 +738,7 @@ footer .footer__bottom {
     margin-top: 20%;
   }
   .clases {
-    margin: 1rem;
+    margin: 10% 0 0 10%;
     padding: 2rem;
   }
   .clases .clases__titulo {
@@ -763,6 +770,9 @@ footer .footer__bottom {
   .nav__item {
     font-size: 60%;
     align-items: center;
+  }
+  fieldset {
+    width: 100%;
   }
 }
 
