@@ -79,8 +79,8 @@ footer {
 .grid-structure6 {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto auto auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  /*grid-template-rows: 1fr auto auto auto 1fr;*/
   grid-template-areas: "header header" "titulo titulo" "opciones opciones" "opciones opciones" "footer footer";
 }
 
@@ -113,7 +113,7 @@ footer {
   }
   .grid-structure6 {
     grid-template-columns: auto;
-    grid-template-rows: 0.5fr auto 1fr;
+    /*grid-template-rows: 0.5fr auto 1fr;*/
   }
 }
 /* -------- ESTILO DE LA NAV BAR --------*/
@@ -691,11 +691,6 @@ footer .footer__bottom {
 @media (max-width: 1700px) {
   #logo {
     margin-right: 25%;
-  }
-}
-@media (max-width: 1700px) {
-  #logo {
-    margin-right: 15%;
   }
 }
 @media (max-width: 1300px) {
