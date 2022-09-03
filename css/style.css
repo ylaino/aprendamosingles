@@ -661,8 +661,10 @@ flex-direction: row;}
 
 .saludo {
   text-align: center;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
+  padding-top: 2%;
   font-size: 120%;
+  font-weight: 500;
 }
 
 /* -------- FOOTER -------- */
@@ -833,7 +835,7 @@ footer .footer__bottom {
     width: 100%;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   .contacto {
     margin: 0;
   }
@@ -853,7 +855,7 @@ footer .footer__bottom {
   .contacto__direccion {
     margin-top: 0;
     margin-bottom: 5%;
-    text-align: c;
+    text-align: center;
   }
 }
 
