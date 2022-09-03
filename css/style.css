@@ -76,6 +76,14 @@ footer {
   grid-template-areas: "header header" "titulo titulo" "contenido1 contenido1" "footer footer";
 }
 
+.grid-structure6 {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto auto auto 1fr;
+  grid-template-areas: "header header" "titulo titulo" "opciones opciones" "opciones opciones" "footer footer";
+}
+
 .grid-structure4 {
   display: grid;
   min-height: 100vh;
@@ -103,6 +111,10 @@ footer {
     grid-template-columns: auto;
     grid-template-rows: 0.5fr auto auto 1fr;
   }
+  .grid-structure6 {
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr auto 1fr;
+  }
 }
 /* -------- ESTILO DE LA NAV BAR --------*/
 .container, .container #logo {
@@ -115,13 +127,15 @@ footer {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 .container #logo {
-  margin-right: 20%;
+  justify-content: flex-start;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   box-shadow: none;
 }
 .container .nav, .container #logo .nav {
   align-items: left;
   justify-content: space-between;
-  padding: 1rem;
+  padding-top: 1rem;
   margin: 1rem;
 }
 .container .nav .nav__list, .container #logo .nav .nav__list {
@@ -674,9 +688,24 @@ footer .footer__bottom {
 }
 
 /* -------- MEDIA QUERIES --------*/
-@media (max-width: 1300) {
+@media (max-width: 1700px) {
+  #logo {
+    margin-right: 25%;
+  }
+}
+@media (max-width: 1700px) {
+  #logo {
+    margin-right: 15%;
+  }
+}
+@media (max-width: 1300px) {
   .clase__imagen {
     width: 75%;
+  }
+}
+@media (max-width: 1064px) {
+  #logo {
+    margin-right: 10%;
   }
 }
 @media (max-width: 950px) {
@@ -684,8 +713,18 @@ footer .footer__bottom {
     display: flex;
     flex-direction: column;
   }
+  #logo {
+    margin-right: 0;
+  }
 }
 @media (max-width: 768px) {
+  #logo {
+    display: none;
+    visibility: hidden;
+  }
+  .nav__lis {
+    display: none;
+  }
   .profesora1 {
     display: flex;
     flex-direction: column;
@@ -772,8 +811,12 @@ footer .footer__bottom {
     justify-content: center;
   }
   .nav__item {
-    font-size: 60%;
+    font-size: 70%;
     align-items: center;
+    justify-content: center;
+  }
+  .container, .container #logo {
+    align-self: center;
   }
   fieldset {
     width: 100%;

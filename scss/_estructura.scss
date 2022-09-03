@@ -72,6 +72,19 @@ header {
     "footer footer";
   }
 
+  .grid-structure6 {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto 1fr;
+    grid-template-areas: 
+    "header header"
+    "titulo titulo"
+    "opciones opciones"
+    "opciones opciones"
+    "footer footer"; 
+  }
+
   .grid-structure4 {
     display: grid;
     min-height: 100vh;
@@ -111,7 +124,10 @@ header {
     grid-template-columns: auto;
     grid-template-rows: 0.5fr auto auto 1fr;
   }
-
+  .grid-structure6 {
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr auto 1fr;
+  }
 
 
 }
