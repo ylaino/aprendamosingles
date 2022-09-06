@@ -362,101 +362,11 @@ body {
   padding-top: 10%;
 }
 
-/*
-.profesora__info {
-  grid-area: infoprofe;
-}
-.profesora__imagen {
-  grid-area: imagenprofe;
-  max-width: 10%;
-}
-
-.grid__profesora{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto auto;
-  grid-template-areas: 
-  "infoprofe imagenprofe"
-  "infoprofe imagenprofe"
-  "infoprofe infoprofe";
-}*/
-/*
-.profesora {
-  font-size: 7px;
-  line-height: 1.6;
-  padding: 2rem 10rem 2rem 10rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .profesora__subtitulo {
-    padding-bottom: 2rem;
-  }
-
-  .profesora1 {
-    display: flex;
-    flex-direction: row;
-
-    background-color: map-get($map: $palette, $key: 'blanco');
-    padding: 2%;
-    margin: 2%;
-
-
-    .profesora__info {
-      font-size: 2rem;
-      background-color: #7FE8E3;
-      padding: 5%;
-
-    }
-    .profesora__banner {
-      max-width:fit-content;
-      height: auto;
-      margin-left: auto; 
-      margin-right: auto;
-      padding-left: 5%;
-     }
-    }
-
-
-
-}
-
-
-
-
-/* -------- PÁGINA DE MODALIDAD --------*/
+/* -------- CLASES --------*/
 .grid {
   display: grid;
   grid-template-columns: 1fr 0.5rem 1fr;
   grid-gap: 0.5rem;
-}
-
-.clases {
-  margin: 4rem;
-  max-width: 80%;
-  padding: 6rem;
-  border: solid black;
-  background-color: rgb(255, 255, 255);
-  border-radius: 30px;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-}
-.clases .clases__titulo {
-  padding: 0;
-  margin: 1rem;
-  font-weight: bolder;
-  text-align: center;
-}
-.clases .clases__contenido {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  line-height: 1.6;
-}
-
-.clase__imagen {
-  align-self: center;
 }
 
 .content1 {
@@ -465,42 +375,35 @@ body {
   padding: 0 2% 2% 2%;
   margin: 0 1% 1% 1% 1%;
 }
-
-.clases {
+.content1 .clases {
   display: flex;
   flex-direction: column;
+  justify-self: center;
   margin: 4rem;
-  max-width: 80%;
   padding: 2.5rem;
-  border: solid black;
+  border: solid #a086e2;
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
 }
-
-.clases__titulo {
+.content1 .clases .clases__titulo {
   padding: 0;
   margin: 1rem;
   font-weight: bold;
   text-align: center;
 }
-
-.clases__contenido {
+.content1 .clases .clases__contenido {
   padding-top: 1rem;
   padding-bottom: 1rem;
   line-height: 1.6;
   justify-content: center;
   align-items: center;
 }
-
-.clases__box {
-  display: flex;
-  flex-direction: row;
-}
-
-.clase__imagen {
+.content1 .clases .clase__imagen {
   width: 100%;
+  align-self: center;
 }
 
+/* ------- HORARIOS -------- */
 .content2 {
   justify-content: center;
   align-items: center;
@@ -533,56 +436,6 @@ body {
   max-width: 50%;
 }
 
-/*
-.content1 {
-  justify-content: center;
-  align-items: center;
-  padding: 2%;
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  }
-
-.grid {display: grid;
-  grid-template-columns: 1fr 0.5rem 1fr;
-  grid-gap: 0.5rem;
-}
-
-.row {display: flex;
-flex-direction: row;}
-
-.clases {
-  margin: 4rem;
-  max-width: 90%;
-  padding: 2.5rem;
-  border: solid black;
-  background-color: rgb(146, 220, 233);
-  font-size: 1rem;
-  border-radius: 30px;
-  }
-
-.clases__titulo {
-  padding:0 ;
-  margin: 1rem;
-  font-size: 3rem;
-  font-weight: bolder;
-  text-align: center;
-}
-
-.clases__contenido {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  line-height: 1.6;
-}
-
-.clases__box {
-  background-image: linear-gradient(to left bottom, #bb6bd1, #ad7adb, #a086e2, #9592e6, #8c9ce8, #6eacf6, #47bbfd, #00c9fd, #00dfef, #00f0c7, #8afa90);
-}
-
-.clase__imagen {
-  width: 25rem;
-}
-*/
 /* -------- CONTACTO -------- */
 .contacto {
   background: linear-gradient(rgba(20, 20, 20, 0), rgba(20, 20, 20, 0)), url(../Imagenes/mezcla.png);
@@ -798,13 +651,6 @@ footer .footer__bottom {
   }
   p {
     font-size: 0.8rem;
-  }
-  .clases {
-    margin: 10% 0 0 10%;
-    padding: 2rem;
-  }
-  .clases .clases__titulo {
-    font-size: 2rem;
   }
   .clase__imagen {
     max-width: 200px;
